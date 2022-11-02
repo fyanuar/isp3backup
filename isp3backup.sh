@@ -113,8 +113,8 @@ echo $(dateStatement) $message | tee -a $LOGDIR/$FDATE.log
 message="Temp directory verification"
 echo $(dateStatement) $message | tee -a $LOGDIR/$FDATE.log
 
-if [ ! -d $tmpdir/ ] ; then
-  mkdir $tmpdir/
+if [ ! -d $TMPDIR/ ] ; then
+  mkdir $TMPDIR/
 
   message="Temp directory created."
   echo $(dateStatement) $message | tee -a $LOGDIR/$FDATE.log
